@@ -1,1 +1,1 @@
-# contracts-registry
+#  Rarible blockchain contracts registry
