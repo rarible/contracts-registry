@@ -397,6 +397,9 @@
                                                   "%token_id"
                                                 ]
                                               }
+                                            ],
+                                            "annots": [
+                                              "%request"
                                             ]
                                           },
                                           {
@@ -409,6 +412,9 @@
                                       }
                                     ]
                                   }
+                                ],
+                                "annots": [
+                                  "%callback"
                                 ]
                               }
                             ],
@@ -539,6 +545,9 @@
                                           }
                                         ]
                                       }
+                                    ],
+                                    "annots": [
+                                      "%add_operator"
                                     ]
                                   },
                                   {
@@ -567,6 +576,9 @@
                                           }
                                         ]
                                       }
+                                    ],
+                                    "annots": [
+                                      "%remove_operator"
                                     ]
                                   }
                                 ]
@@ -8883,7 +8895,7 @@
                                                               "prim": "string"
                                                             },
                                                             {
-                                                              "string": "SIGNER_IS_NOT_FROM"
+                                                              "string": "SIGNER_NOT_FROM"
                                                             }
                                                           ]
                                                         },
