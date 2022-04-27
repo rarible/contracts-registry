@@ -125,7 +125,7 @@
                                   }
                                 ],
                                 "annots": [
-                                  "%operator"
+                                  "%operators"
                                 ]
                               },
                               {
@@ -263,7 +263,7 @@
                                               }
                                             ],
                                             "annots": [
-                                              "%operator_for_all"
+                                              "%operators_for_all"
                                             ]
                                           },
                                           {
@@ -4290,36 +4290,7 @@
                                             {
                                               "prim": "IF",
                                               "args": [
-                                                [
-                                                  {
-                                                    "prim": "PUSH",
-                                                    "args": [
-                                                      {
-                                                        "prim": "string"
-                                                      },
-                                                      {
-                                                        "string": "operator"
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "prim": "PUSH",
-                                                    "args": [
-                                                      {
-                                                        "prim": "string"
-                                                      },
-                                                      {
-                                                        "string": "KeyExists"
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "prim": "PAIR"
-                                                  },
-                                                  {
-                                                    "prim": "FAILWITH"
-                                                  }
-                                                ],
+                                                [],
                                                 [
                                                   {
                                                     "prim": "DUP",
@@ -4330,18 +4301,15 @@
                                                     ]
                                                   },
                                                   {
-                                                    "prim": "PUSH",
+                                                    "prim": "DUP",
                                                     "args": [
                                                       {
-                                                        "prim": "unit"
-                                                      },
-                                                      {
-                                                        "prim": "Unit"
+                                                        "int": "2"
                                                       }
                                                     ]
                                                   },
                                                   {
-                                                    "prim": "SOME"
+                                                    "prim": "CAR"
                                                   },
                                                   {
                                                     "prim": "DUP",
@@ -4352,17 +4320,6 @@
                                                     ]
                                                   },
                                                   {
-                                                    "prim": "CAR"
-                                                  },
-                                                  {
-                                                    "prim": "DUP",
-                                                    "args": [
-                                                      {
-                                                        "int": "4"
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
                                                     "prim": "CDR"
                                                   },
                                                   {
@@ -4375,7 +4332,7 @@
                                                     "prim": "DUP",
                                                     "args": [
                                                       {
-                                                        "int": "4"
+                                                        "int": "3"
                                                       }
                                                     ]
                                                   },
@@ -4389,40 +4346,147 @@
                                                     "prim": "PAIR"
                                                   },
                                                   {
-                                                    "prim": "UPDATE"
+                                                    "prim": "MEM"
                                                   },
                                                   {
-                                                    "prim": "DIP",
+                                                    "prim": "IF",
                                                     "args": [
-                                                      {
-                                                        "int": "1"
-                                                      },
                                                       [
                                                         {
-                                                          "prim": "DIG",
+                                                          "prim": "PUSH",
+                                                          "args": [
+                                                            {
+                                                              "prim": "string"
+                                                            },
+                                                            {
+                                                              "string": "operators"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "PUSH",
+                                                          "args": [
+                                                            {
+                                                              "prim": "string"
+                                                            },
+                                                            {
+                                                              "string": "KeyExists"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "PAIR"
+                                                        },
+                                                        {
+                                                          "prim": "FAILWITH"
+                                                        }
+                                                      ],
+                                                      [
+                                                        {
+                                                          "prim": "DUP",
+                                                          "args": [
+                                                            {
+                                                              "int": "9"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "PUSH",
+                                                          "args": [
+                                                            {
+                                                              "prim": "unit"
+                                                            },
+                                                            {
+                                                              "prim": "Unit"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "SOME"
+                                                        },
+                                                        {
+                                                          "prim": "DUP",
+                                                          "args": [
+                                                            {
+                                                              "int": "3"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "CAR"
+                                                        },
+                                                        {
+                                                          "prim": "DUP",
+                                                          "args": [
+                                                            {
+                                                              "int": "4"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "CDR"
+                                                        },
+                                                        {
+                                                          "prim": "CDR"
+                                                        },
+                                                        {
+                                                          "prim": "PAIR"
+                                                        },
+                                                        {
+                                                          "prim": "DUP",
+                                                          "args": [
+                                                            {
+                                                              "int": "4"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "CDR"
+                                                        },
+                                                        {
+                                                          "prim": "CAR"
+                                                        },
+                                                        {
+                                                          "prim": "PAIR"
+                                                        },
+                                                        {
+                                                          "prim": "UPDATE"
+                                                        },
+                                                        {
+                                                          "prim": "DIP",
+                                                          "args": [
+                                                            {
+                                                              "int": "1"
+                                                            },
+                                                            [
+                                                              {
+                                                                "prim": "DIG",
+                                                                "args": [
+                                                                  {
+                                                                    "int": "8"
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "prim": "DROP",
+                                                                "args": [
+                                                                  {
+                                                                    "int": "1"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "DUG",
                                                           "args": [
                                                             {
                                                               "int": "8"
                                                             }
                                                           ]
-                                                        },
-                                                        {
-                                                          "prim": "DROP",
-                                                          "args": [
-                                                            {
-                                                              "int": "1"
-                                                            }
-                                                          ]
                                                         }
                                                       ]
-                                                    ]
-                                                  },
-                                                  {
-                                                    "prim": "DUG",
-                                                    "args": [
-                                                      {
-                                                        "int": "8"
-                                                      }
                                                     ]
                                                   }
                                                 ]
@@ -4746,36 +4810,7 @@
                                             {
                                               "prim": "IF",
                                               "args": [
-                                                [
-                                                  {
-                                                    "prim": "PUSH",
-                                                    "args": [
-                                                      {
-                                                        "prim": "string"
-                                                      },
-                                                      {
-                                                        "string": "operator_for_all"
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "prim": "PUSH",
-                                                    "args": [
-                                                      {
-                                                        "prim": "string"
-                                                      },
-                                                      {
-                                                        "string": "KeyExists"
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "prim": "PAIR"
-                                                  },
-                                                  {
-                                                    "prim": "FAILWITH"
-                                                  }
-                                                ],
+                                                [],
                                                 [
                                                   {
                                                     "prim": "DUP",
@@ -4786,27 +4821,13 @@
                                                     ]
                                                   },
                                                   {
-                                                    "prim": "PUSH",
-                                                    "args": [
-                                                      {
-                                                        "prim": "unit"
-                                                      },
-                                                      {
-                                                        "prim": "Unit"
-                                                      }
-                                                    ]
-                                                  },
-                                                  {
-                                                    "prim": "SOME"
-                                                  },
-                                                  {
                                                     "prim": "SENDER"
                                                   },
                                                   {
                                                     "prim": "DUP",
                                                     "args": [
                                                       {
-                                                        "int": "4"
+                                                        "int": "3"
                                                       }
                                                     ]
                                                   },
@@ -4814,40 +4835,116 @@
                                                     "prim": "PAIR"
                                                   },
                                                   {
-                                                    "prim": "UPDATE"
+                                                    "prim": "MEM"
                                                   },
                                                   {
-                                                    "prim": "DIP",
+                                                    "prim": "IF",
                                                     "args": [
-                                                      {
-                                                        "int": "1"
-                                                      },
                                                       [
                                                         {
-                                                          "prim": "DIG",
+                                                          "prim": "PUSH",
+                                                          "args": [
+                                                            {
+                                                              "prim": "string"
+                                                            },
+                                                            {
+                                                              "string": "operators_for_all"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "PUSH",
+                                                          "args": [
+                                                            {
+                                                              "prim": "string"
+                                                            },
+                                                            {
+                                                              "string": "KeyExists"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "PAIR"
+                                                        },
+                                                        {
+                                                          "prim": "FAILWITH"
+                                                        }
+                                                      ],
+                                                      [
+                                                        {
+                                                          "prim": "DUP",
+                                                          "args": [
+                                                            {
+                                                              "int": "12"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "PUSH",
+                                                          "args": [
+                                                            {
+                                                              "prim": "unit"
+                                                            },
+                                                            {
+                                                              "prim": "Unit"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "SOME"
+                                                        },
+                                                        {
+                                                          "prim": "SENDER"
+                                                        },
+                                                        {
+                                                          "prim": "DUP",
+                                                          "args": [
+                                                            {
+                                                              "int": "4"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "PAIR"
+                                                        },
+                                                        {
+                                                          "prim": "UPDATE"
+                                                        },
+                                                        {
+                                                          "prim": "DIP",
+                                                          "args": [
+                                                            {
+                                                              "int": "1"
+                                                            },
+                                                            [
+                                                              {
+                                                                "prim": "DIG",
+                                                                "args": [
+                                                                  {
+                                                                    "int": "11"
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "prim": "DROP",
+                                                                "args": [
+                                                                  {
+                                                                    "int": "1"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          ]
+                                                        },
+                                                        {
+                                                          "prim": "DUG",
                                                           "args": [
                                                             {
                                                               "int": "11"
                                                             }
                                                           ]
-                                                        },
-                                                        {
-                                                          "prim": "DROP",
-                                                          "args": [
-                                                            {
-                                                              "int": "1"
-                                                            }
-                                                          ]
                                                         }
                                                       ]
-                                                    ]
-                                                  },
-                                                  {
-                                                    "prim": "DUG",
-                                                    "args": [
-                                                      {
-                                                        "int": "11"
-                                                      }
                                                     ]
                                                   }
                                                 ]
